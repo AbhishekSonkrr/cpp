@@ -1,0 +1,36 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "compile",
+      "type": "shell",
+      "command": "g++",
+      "args": [
+        "-std=c++17",
+        "-o",
+        "${workspaceFolder}/.vscode/executable/${fileBasenameNoExtension}",
+        "${file}"
+      ],
+      "group": {
+        "kind": "build",
+        "isDefault": false
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "compile and run",
+      "type": "shell",
+      "command": "bash",
+      "args": [
+        "-c",
+        "${workspaceFolder}/.vscode/executable/${fileBasenameNoExtension} < \"${workspaceFolder}/.vscode/input.txt\" > \"${workspaceFolder}/.vscode/output.txt\""
+      ],
+      "dependsOn": "compile",
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "problemMatcher": []
+    }
+  ]
+}

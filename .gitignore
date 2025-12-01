@@ -1,0 +1,2 @@
+# Ignore executables placed by the build task
+.vscode/executable/
