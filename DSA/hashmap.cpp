@@ -1,7 +1,7 @@
 #include<iostream>
 using namespace std;
 
-int hashh[1000000];
+int hashh[1000000];//size for hash
 
 int main()
 {
