@@ -1,49 +1,48 @@
-#include<iostream>
+#include <iostream>
 
-#include<cmath>   //included to use floor and ceil function 
+#include <cmath> //included to use floor and ceil function
 
 using namespace std;
 
-int main(){
-    
-/*increment*/ 
-    
-    int a=2;
-    
-    cout<<"post increment: "<<a++<<endl;    //original value used, then increment
+int main() {
 
-    //now value of a:3
+  /*increment*/
 
-    cout<<"pre increment: "<<++a<<endl<<endl;     //increment, then updated value used
+  int a = 2;
 
-    //now value of a:4
-    
+  cout << "post increment: " << a++
+       << endl; // original value used, then increment
 
-/*decrement*/
+  // now value of a:3
 
-    int b=6;
-   
-    cout<<"post decrement:"<<b--<<endl;//output: 6
-   
-    //now the value is 5
+  cout << "pre increment: " << ++a << endl
+       << endl; // increment, then updated value used
 
+  // now value of a:4
 
-    cout<<"pre decrement:"<<--b<<endl;//output: 4
-    
-    //now the value is 4
+  /*decrement*/
 
-    
-/*floor and ceil*/
-   
-    float c=8.67;
-    
-    double d = floor(c);
-    
-    double e=ceil(c);
-   
-    cout<<d<<endl;  //output: 7 (largest integer <= a)
-   
-    cout<<e<<endl;  //cout<<e<<endl;//output: 6 (smallest integer >= a)
+  int b = 6;
 
-    return 0;
+  cout << "post decrement:" << b-- << endl; // output: 6
+
+  // now the value is 5
+
+  cout << "pre decrement:" << --b << endl; // output: 4
+
+  // now the value is 4
+
+  /*floor and ceil*/
+
+  float c = 8.67;
+
+  double d = floor(c);
+
+  double e = ceil(c);
+
+  cout << d << endl; // output: 7 (largest integer <= a)
+
+  cout << e << endl; // cout<<e<<endl;//output: 6 (smallest integer >= a)
+
+  return 0;
 }

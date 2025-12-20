@@ -1,36 +1,33 @@
 /*--------------------------------------------------
 Ques: Print the maximum out of three value input by user
 --------------------------------------------------*/
-#include<iostream>
+#include <iostream>
 using namespace std;
-int main(){
+int main() {
 
-    int a,b,c;
-    
-    cout<<"a: ";
-    cin>>a;
+  int a, b, c;
 
-    cout<<"b: ";
-    cin>>b;
+  cout << "a: ";
+  cin >> a;
 
-    cout<<"c: ";
-    cin>>c;
+  cout << "b: ";
+  cin >> b;
 
+  cout << "c: ";
+  cin >> c;
 
-// == algorithm ==
+  // == algorithm ==
 
-    if(a>=b && a>=c){
+  if (a >= b && a >= c) {
 
-        cout << "MAXIMUM VALUE IS a: " << a << endl;
-    }
-    else if(b>=a && b>=c){
-        
-        cout << "MAXIMUM VALUE IS b: " << b << endl;
-    }
-    else{ 
-        
-        cout << "MAXIMUM VALUE IS c: " << c << endl;
-    }
+    cout << "MAXIMUM VALUE IS a: " << a << endl;
+  } else if (b >= a && b >= c) {
 
-    return 0;   
+    cout << "MAXIMUM VALUE IS b: " << b << endl;
+  } else {
+
+    cout << "MAXIMUM VALUE IS c: " << c << endl;
+  }
+
+  return 0;
 }

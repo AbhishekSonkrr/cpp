@@ -1,0 +1,10 @@
+
+
+BasedOnStyle: Google
+IndentWidth: 4
+ColumnLimit: 0
+AllowShortFunctionsOnASingleLine: All
+BreakBeforeBraces: Attach
+SpaceBeforeParens: Never
+KeepEmptyLinesAtTheStartOfBlocks: false
+KeepEmptyLinesAtTheEndOfBlocks: false

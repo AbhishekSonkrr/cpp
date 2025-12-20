@@ -2,35 +2,32 @@
 print the maximum value input by the user
 ----------------------------------------*/
 
-#include<iostream>
+#include <iostream>
 using namespace std;
-int main(){
-    int a,b,c;
-    cout<<"a ";
-    cin>>a;
-   
-    cout<<"b ";
-    cin>>b;
-   
-    cout<<"c ";
-    cin>>c;
+int main() {
+  int a, b, c;
+  cout << "a ";
+  cin >> a;
 
-/*nested if else statement*/
-    if (a>b){
-        if (a<c){
-            cout << "c:" << c;
-        }
-        else {
-            cout << "a:" << a;
-        }
-        }
-    else{
-         if (b>c){
-            cout << "b: " << b;
-        }
-        else{
-            cout << "c: "<< c;
-        }
+  cout << "b ";
+  cin >> b;
+
+  cout << "c ";
+  cin >> c;
+
+  /*nested if else statement*/
+  if (a > b) {
+    if (a < c) {
+      cout << "c:" << c;
+    } else {
+      cout << "a:" << a;
     }
-    return 0;
+  } else {
+    if (b > c) {
+      cout << "b: " << b;
+    } else {
+      cout << "c: " << c;
+    }
+  }
+  return 0;
 }

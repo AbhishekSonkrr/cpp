@@ -1,38 +1,36 @@
-#include<iostream>
+#include <iostream>
 using namespace std;
-int main(){
-    char alphabet;
+int main() {
+  char alphabet;
 
-    cout << "Alphabet is :";
-    
-    cin >> alphabet;
-    
-    switch(alphabet){
-        case 'a':
-            cout << "it is vowel" << endl;
-         break;
+  cout << "Alphabet is :";
 
-        case 'e':
-            cout << "it is vowel" << endl;
-         break;
+  cin >> alphabet;
 
-        case 'i':
-            cout << "it is vowel" << endl;
-         break;
+  switch (alphabet) {
+  case 'a':
+    cout << "it is vowel" << endl;
+    break;
 
-        case 'o':
-            cout << "it is vowel" << endl;
-         break;
+  case 'e':
+    cout << "it is vowel" << endl;
+    break;
 
-        case 'u':
-            cout << "it is vowel" << endl;
-         break;
+  case 'i':
+    cout << "it is vowel" << endl;
+    break;
 
-    default:
-        cout << "it is consonant" << endl;
-    
-    }
+  case 'o':
+    cout << "it is vowel" << endl;
+    break;
 
+  case 'u':
+    cout << "it is vowel" << endl;
+    break;
 
-    return 0;
+  default:
+    cout << "it is consonant" << endl;
+  }
+
+  return 0;
 }

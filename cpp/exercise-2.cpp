@@ -5,17 +5,17 @@
 using namespace std;
 
 int main() {
-    int a, b;
+  int a, b;
 
-    cout << "a: ";
-    cin >> a;
+  cout << "a: ";
+  cin >> a;
 
-    cout << "b: ";
-    cin >> b;
+  cout << "b: ";
+  cin >> b;
 
-    int sum = a + b;
+  int sum = a + b;
 
-    cout << "sum = " << sum << endl;
+  cout << "sum = " << sum << endl;
 
-    return 0;
+  return 0;
 }

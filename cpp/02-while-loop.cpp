@@ -1,62 +1,57 @@
 /*-------------------
 print sum of n values
 -------------------*/
-#include<iostream>
+#include <iostream>
 using namespace std;
-int main(){
-    
+int main() {
     int n;
-    int sum=0;
-    int i=1; 
+    int sum = 0;
+    int i = 1;
     int Sum;
-    cout << "n:"; 
+    cout << "n:";
     cin >> n;
 
+    // a. WHILE
+    // LOOP--------------------------------------------------------------------
 
-    // a. WHILE LOOP--------------------------------------------------------------------
-    
-    while(i<=n){
+    while(i <= n) {
+        sum += i;
 
-        sum+=i;
-        
-        i++; //increasing i by 1 each time
+        i++;  // increasing i by 1 each time
     }
     cout << "while loop: " << sum << endl;
-    
 
-    // b. FOR LOOP----------------------------------------------------------------------
+    // b. FOR
+    // LOOP----------------------------------------------------------------------
 
-    for(; i<=n; i++){
-        
-        Sum+=i;
-    
+    for(; i <= n; i++) {
+        Sum += i;
     }
     cout << "for loop: " << Sum;
 
-
-    // c. DO WHILE----------------------------------------------------------------------
+    // c. DO
+    // WHILE----------------------------------------------------------------------
 
     int m;
 
-    cout<<"number of integers:";
+    cout << "number of integers:";
 
-    cin>>m;
+    cin >> m;
 
-    do{
+    do {
         int Num;
-        
+
         cout << "Numbers:";
-        
-        cin>>Num;
-        
-        sum+=Num;
-        
+
+        cin >> Num;
+
+        sum += Num;
+
         m--;
-    
-    }while(m>0);
+
+    } while(m > 0);
 
     cout << sum << endl;
-    
-    return 0;
 
+    return 0;
 }

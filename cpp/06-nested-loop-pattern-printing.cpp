@@ -1,26 +1,23 @@
-#include<iostream>
+#include <iostream>
 
 using namespace std;
 
-int main(){
+int main() {
+  int i, j, m, n;
 
-    int i,j,m,n;
-    
-    cout << "length:";
-    cin >> m;
-    
-    cout << "breadth:";
-    cin >> n;
-    
-    for(j=1; j<=n; j++){
-        
-        for(i=1; i<m; i++){
-     
-            cout << "*";
-        }
-        
-        cout << endl;
+  cout << "length:";
+  cin >> m;
+
+  cout << "breadth:";
+  cin >> n;
+
+  for (j = 1; j <= n; j++) {
+    for (i = 1; i < m; i++) {
+      cout << "*";
     }
 
-    return 0;
+    cout << endl;
+  }
+
+  return 0;
 }
